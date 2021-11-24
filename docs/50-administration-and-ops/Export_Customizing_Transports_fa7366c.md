@@ -4,7 +4,15 @@
 
 
 
-Changes to business configuration settings are recorded in customizing transport requests. With this app, you can manage these requests.
+All Business Configuration changes are recorded in a different request, depending on the Customizing Objects.
+
+-   Client-specific Business Configurations are recorded in a request of type “Customizing Request”
+
+-   Cross-client Business Configurations are recorded in a request of type “Cross-Client Customizing Request”
+
+Unlike ABAP Repository Objects, Customizing Objects recorded in a request are not locked against access by other Business Users.
+
+With this app, you can manage these requests.
 
 
 
@@ -12,14 +20,13 @@ Changes to business configuration settings are recorded in customizing transport
 
 ## Access Information
 
-The following business catalogs are available to manage the customizing transport requests.
+The following business catalogs are available to manage the customizing transports.
 
--   Display/Edit/Delete: SAP\_CORE\_BC\_BCT\_TRN\_MNG\_PC - Business Configuration - Transport Management \(assigned to role SAP\_BCR\_CORE\_BCT\_TRN\_MNG\_PC\)
+-   Display/Create/Edit/Delete: SAP\_CORE\_BC\_BCT\_TRN\_MNG\_PC - Business Configuration - Transport Management
 
--   Display/Edit/Delete/Release: SAP\_CORE\_BC\_BCT\_TRN\_REL\_PC - Business Configuration - Transport Release Management \(assigned to role SAP\_BCR\_CORE\_BCT\_TRN\_REL\_PC\)
+-   Display/Create/Edit/Delete/Release: SAP\_CORE\_BC\_BCT\_TRN\_REL\_PC - Business Configuration - Transport Release Management
 
-
-These business catalogs are contained in the business role template: SAP\_BR\_BPC\_EXPERT.
+Above catalogs are available in the Business Role template: SAP\_BR\_BPC\_EXPERT.
 
 
 
@@ -31,27 +38,19 @@ You can use this app to:
 
 -   Display a list of customizing requests.
 
--   Create new customizing transport requests.
+-   Create new customizing requests or its tasks.
 
--   Display the customizing tasks and objects of a customizing transport request.
+-   Display the Tasks, Objects, Attributes and Logs of a customizing request.
 
--   Display the objects recorded in a customizing task.
+-   Display the objects recorded in a task.
 
 -   Display the table keys recorded for an object.
 
--   Check customizing transport requests.
+-   Release customizing requests or its tasks.
 
--   Release customizing transport requests.
+-   Take over the ownership of Request or Task
 
--   Assign a transport request to your user
-
--   Create tasks for other users.
-
--   Change transport category.
-
--   Take over tasks and transports from other users and assign them to your user.
-
-
+-   Change request category.
 
 
 
